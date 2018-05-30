@@ -1289,7 +1289,7 @@
         "region": "Δυτική Ελλάδα",
         "title": "Γ.Ν. Αμαλιάδας",
         "position": { "lat": 37.7909, "lng": 21.3563},
-        "link" : "<b>Λίστα αναμονής και κενές θέσεις: </b> <a href='http://www.pde.gov.gr/gr/enimerosi/waitinglistofdoctors.html' target='_blank'> πατήστε τη λίστα απο το Γ.Ν. Ηλείας</a>",
+        "link" : "<b>Λίστα αναμονής και κενές θέσεις: </b> <a href='http://www.pde.gov.gr/gr/enimerosi/waitinglistofdoctors.html' target='_blank'> πατήστε τη λίστα απο το Γενικό Νοσοκομείο Ηλείας</a>",
         "specialties": [1,2,3,11],
         "years": {
             "1" : 2,
@@ -1325,7 +1325,7 @@
         "region": "Δυτική Ελλάδα",
         "title": "Γ.Ν.-Κ.Υ. Κρεστένων",
         "position": { "lat": 37.5907, "lng": 21.6147},
-        "link" : "<b>Λίστα αναμονής και κενές θέσεις: </b> <a href='http://www.pde.gov.gr/gr/enimerosi/waitinglistofdoctors.html' target='_blank'> πατήστε τη λίστα απο το Γ.Ν. Ηλείας</a>",
+        "link" : "<b>Λίστα αναμονής και κενές θέσεις: </b> <a href='http://www.pde.gov.gr/gr/enimerosi/waitinglistofdoctors.html' target='_blank'> πατήστε τη λίστα απο το Γενικό Νοσοκομείο Ηλείας</a>",
         "specialties": [1,2],
         "years": {
             "1" : 1,
@@ -1441,7 +1441,7 @@
         "region": "Πελοπόννησος",
         "title": "Γ.Ν. Πύργου",
         "position": { "lat": 37.6830, "lng": 21.4237},
-        "link" : "<b>Λίστα αναμονής και κενές θέσεις: </b> <a href='http://www.pde.gov.gr/gr/enimerosi/waitinglistofdoctors.html' target='_blank'> πατήστε τη λίστα απο το Γ.Ν. Ηλείας</a>",
+        "link" : "<b>Λίστα αναμονής και κενές θέσεις: </b> <a href='http://www.pde.gov.gr/gr/enimerosi/waitinglistofdoctors.html' target='_blank'> πατήστε τη λίστα απο το Γενικό Νοσοκομείο Ηλείας</a>",
         "specialties": [1,2,3,4,5,6,9,11],
         "years": {
             "1" : 2,
