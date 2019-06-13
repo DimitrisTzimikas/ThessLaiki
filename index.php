@@ -19,8 +19,8 @@ include_once "PHPMailer/SMTP.php";
     $mail->Host = "smtp.gmail.com";
     //$mail->isSMTP();
     $mail->SMTPAuth = true;
-    $mail->Username = "";
-    $mail->Password = "";
+    $mail->Username = "tzimikasd@gmail.com";
+    $mail->Password = "6975787089a";
     $mail->SMTPSecure = "ssl"; //TLS
     $mail->Port = 465; //587
 
