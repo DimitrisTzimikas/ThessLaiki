@@ -23,7 +23,7 @@ let temp = [];
 const endpointLaikes = 'https://raw.githubusercontent.com/DimitrisTzimikas/ThessLaiki/master/json/laikes.json';
 
 fetch(endpointLaikes)
-    .then(blob => blob.json())
+    .then(res => res.json())
     .then(data => locations.push(...data));
 
 // ----------------- Συναρτήσεις εμφάνισης εικόνων λαίκών -----------------
