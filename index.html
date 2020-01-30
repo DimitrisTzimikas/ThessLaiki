@@ -60,34 +60,33 @@
     <div id="copyright-section">
         Copyright © <span id="year"></span> <a href="https://www.linkedin.com/in/dimitristzimikas/" target="_blank"><b>traneStudio</b></a>. All rights reserved.
     </div>
-
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat"
-         page_id="1533321446759981"
-         minimized="false"
-         logged_in_greeting="Γειά σας! Πως μπορώ να βοηθήσω;"
-         logged_out_greeting="Γειά σας! Πως μπορώ να βοηθήσω;">
-    </div>
-
+    
     <!-- Load Facebook SDK for JavaScript -->
-    <script>
+      <div id="fb-root"></div>
+      <script>
         window.fbAsyncInit = function() {
-            FB.init({
-                appId            : '388433111639467',
-                autoLogAppEvents : true,
-                xfbml            : true,
-                version          : 'v2.11'
-            });
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
         };
-        (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {return;}
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
 
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="1533321446759981"
+        theme_color="#0084ff"
+        logged_in_greeting="Γειά σας! Πως μπορώ να βοηθήσω;"
+        logged_out_greeting="Γειά σας! Πως μπορώ να βοηθήσω;">
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
