@@ -20,7 +20,7 @@ let request;
 let j;
 let locations = [];
 let temp = [];
-const endpointLaikes = 'https://raw.githubusercontent.com/DimitrisTzimikas/ThessLaiki/master/json/laikes.json';
+const endpointLaikes = 'https://raw.githubusercontent.com/DimitrisTzimikas/pameLaiki/master/json/laikes.json';
 
 fetch(endpointLaikes)
     .then(res => res.json())

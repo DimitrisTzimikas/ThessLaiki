@@ -2,9 +2,9 @@
 
 ### What is this repository for? ###
 
-###Thess Laiki Website
+###Pame Laiki Website
 
-https://thesslaiki.gr
+https://pamelaiki.gr
 
 You can find the closest public markets in your place with two clicks
 
