@@ -2,7 +2,7 @@
 
 ### What is this repository for?
 
-###Pame Laiki Website
+Pame Laiki Website
 
 https://pamelaiki.netlify.app/
 
