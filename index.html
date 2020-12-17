@@ -3,96 +3,97 @@
 <html lang="en">
 
 <head>
-    <title>Λαϊκές Αγορές Θεσσαλονίκης</title>
+  <title>Λαϊκές Αγορές Θεσσαλονίκης</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Στο site pamelaiki.gr μπορείς να βρεις την πιο κοντινή λαϊκή αγορά στο σπίτι σου με δύο μόνο κλικ!"/>
-    <meta name="keywords" content="λαϊκές, λαϊκές αγορές, Θεσσαλονίκη, pamelaiki, pamelaiki.gr, Λαϊκές αγορές Θεσσαλονίκης, φρούτα, λαχανικά, ψάρια, παζάρι">
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.pamelaiki.gr/" />
-    <meta property="og:title" content="Thess Laiki" />
-    <meta property="og:site_name" content="Thess Laiki" />
-    <meta property="og:locale" content="el_GR" />
-    <meta property="og:image" content="https://pamelaiki.gr/icons/pameLaiki.png" />
-    <meta property="og:image:url" content="https://pamelaiki.gr/icons/pameLaiki.png" />
-    <meta property="og:image:secure_url" content="https://pamelaiki.gr/icons/pameLaiki.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="Στο site pamelaiki μπορείς να βρεις την πιο κοντινή λαϊκή αγορά στο σπίτι σου με δύο μόνο κλικ!" />
+  <meta name="keywords"
+    content="λαϊκές, λαϊκές αγορές, Θεσσαλονίκη, pamelaiki, pamelaiki.gr, Λαϊκές αγορές Θεσσαλονίκης, φρούτα, λαχανικά, ψάρια, παζάρι">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.pamelaiki.gr/" />
+  <meta property="og:title" content="Thess Laiki" />
+  <meta property="og:site_name" content="Thess Laiki" />
+  <meta property="og:locale" content="el_GR" />
+  <meta property="og:image" content="https://pamelaiki.gr/icons/pameLaiki.png" />
+  <meta property="og:image:url" content="https://pamelaiki.gr/icons/pameLaiki.png" />
+  <meta property="og:image:secure_url" content="https://pamelaiki.gr/icons/pameLaiki.png" />
 
-    <link rel="shortcut icon" href="icons/farmstand.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=greek" rel="stylesheet"></head>
+  <link rel="shortcut icon" href="icons/farmstand.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=greek" rel="stylesheet">
 </head>
 
 <body>
-    <button id="directions">Πιο κοντά</button>
+  <button id="directions">Πιο κοντά</button>
 
-    <div id="map"></div>
+  <div id="map"></div>
 
-    <div id="floating-panel">
-        <img class="menuIcons" src="icons/blueHome3.png"><br>
-        <button id="location" onclick="dropMyLocation()">Που βρίσκομαι</button><br>
-        <img class="menuIcons" src="icons/refresh.png"><br>
-        <button id="resetLocation" onclick="resetLocation()">Επαναφορά Χάρτη</button><br>
-        <img class="menuIcons" src="icons/farmstand.png"><br>
-        <button id="drop" onclick="dropMarkers('all')">Όλες οι Λαϊκές</button><br>
-        <h3 id="laikesHeader">Λαϊκές</h3><hr>
-        <div id="dayButtons">
-            <button id="drop1" onclick="dropMarkers('monday')">Δευτέρας</button><br>
-            <button id="drop2" onclick="dropMarkers('tuesday')">Τρίτης</button><br>
-            <button id="drop3" onclick="dropMarkers('wednesday')">Τετάρτης</button><br>
-            <button id="drop4" onclick="dropMarkers('thursday')">Πέμπτης</button><br>
-            <button id="drop5" onclick="dropMarkers('friday')">Παρασκευής</button><br>
-            <button id="drop6" onclick="dropMarkers('saturday')">Σαββάτου</button>
-        </div>
+  <div id="floating-panel">
+    <img class="menuIcons" src="icons/blueHome3.png"><br>
+    <button id="location" onclick="dropMyLocation()">Που βρίσκομαι</button><br>
+    <img class="menuIcons" src="icons/refresh.png"><br>
+    <button id="resetLocation" onclick="resetLocation()">Επαναφορά Χάρτη</button><br>
+    <img class="menuIcons" src="icons/farmstand.png"><br>
+    <button id="drop" onclick="dropMarkers('all')">Όλες οι Λαϊκές</button><br>
+    <h3 id="laikesHeader">Λαϊκές</h3>
+    <hr>
+    <div id="dayButtons">
+      <button id="drop1" onclick="dropMarkers('monday')">Δευτέρας</button><br>
+      <button id="drop2" onclick="dropMarkers('tuesday')">Τρίτης</button><br>
+      <button id="drop3" onclick="dropMarkers('wednesday')">Τετάρτης</button><br>
+      <button id="drop4" onclick="dropMarkers('thursday')">Πέμπτης</button><br>
+      <button id="drop5" onclick="dropMarkers('friday')">Παρασκευής</button><br>
+      <button id="drop6" onclick="dropMarkers('saturday')">Σαββάτου</button>
     </div>
+  </div>
 
-    <div id="travelMode">
-            <strong>Μεταφορικό μέσο: </strong>
-            <select id="mode" onchange="findNearestPlace();">
-                <option value="DRIVING">Αμάξι</option>
-                <option value="WALKING">Πόδια</option>
-            </select>
-        </div>
+  <div id="travelMode">
+    <strong>Μεταφορικό μέσο: </strong>
+    <select id="mode" onchange="findNearestPlace();">
+      <option value="DRIVING">Αμάξι</option>
+      <option value="WALKING">Πόδια</option>
+    </select>
+  </div>
 
-    <input id="pac-input" class="controls" type="text" placeholder="Αναζήτηση οδού">
+  <input id="pac-input" class="controls" type="text" placeholder="Αναζήτηση οδού">
 
-    <div id="copyright-section">
-        Copyright © <span id="year"></span> <a href="https://www.linkedin.com/in/dimitristzimikas/" target="_blank"><b>traneStudio</b></a>. All rights reserved.
-    </div>
+  <div id="copyright-section">
+    Copyright © <span id="year"></span> <a href="https://www.linkedin.com/in/dimitristzimikas/"
+      target="_blank"><b>traneStudio</b></a>. All rights reserved.
+  </div>
 
-    <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v5.0'
-          });
-        };
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v5.0'
+      });
+    };
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
-      <!-- Your customer chat code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="1533321446759981"
-        theme_color="#0084ff"
-        logged_in_greeting="Γειά σας! Πως μπορώ να βοηθήσω;"
-        logged_out_greeting="Γειά σας! Πως μπορώ να βοηθήσω;">
-      </div>
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution="setup_tool" page_id="1533321446759981" theme_color="#0084ff"
+    logged_in_greeting="Γειά σας! Πως μπορώ να βοηθήσω;" logged_out_greeting="Γειά σας! Πως μπορώ να βοηθήσω;">
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-    <script src="js/googleMaps.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?v=weekly&key=AIzaSyAuRmvMwMnAuE25NHlyiNJBYVwzsg24rBA&libraries=places&callback=initMap"></script>
-//AIzaSyDeDUKiqX7dYr97zFpM_WbndKSdUCAH6xE
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/googleMaps.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?v=weekly&key=AIzaSyAuRmvMwMnAuE25NHlyiNJBYVwzsg24rBA&libraries=places&callback=initMap"></script>
+  //AIzaSyDeDUKiqX7dYr97zFpM_WbndKSdUCAH6xE
 </body>
+
 </html>
